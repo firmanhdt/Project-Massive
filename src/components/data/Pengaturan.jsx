@@ -16,20 +16,40 @@ const Pengaturan = () => {
         <h2 className="text-lg font-semibold mb-4">Akun dan Keamanan</h2>
         <div className="space-y-4">
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
-            <span className="text-gray-600">Username</span>
-            <span className="bg-gray-100 px-4 py-2 rounded w-full md:w-2/3 lg:w-[600px] text-start md:text-end">Refiani Julianti</span>
+            <label htmlFor="username" className="text-gray-600">Username</label>
+            <input 
+              type="text"
+              id="username"
+              className="bg-gray-100 px-4 py-2 rounded w-full md:w-2/3 lg:w-[600px] text-start md:text-end"
+              defaultValue="Refiani Julianti"
+            />
           </div>
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
-            <span className="text-gray-600">No. Handphone</span>
-            <span className="bg-gray-100 px-4 py-2 rounded w-full md:w-2/3 lg:w-[600px] text-start md:text-end">0812-1985-3387</span>
+            <label htmlFor="phone" className="text-gray-600">No. Handphone</label>
+            <input 
+              type="tel"
+              id="phone"
+              className="bg-gray-100 px-4 py-2 rounded w-full md:w-2/3 lg:w-[600px] text-start md:text-end"
+              defaultValue="0812-1985-3387"
+            />
           </div>
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
-            <span className="text-gray-600">Email</span>
-            <span className="bg-gray-100 px-4 py-2 rounded w-full md:w-2/3 lg:w-[600px] text-start md:text-end">refianijulianti@gmail.com</span>
+            <label htmlFor="email" className="text-gray-600">Email</label>
+            <input 
+              type="email"
+              id="email"
+              className="bg-gray-100 px-4 py-2 rounded w-full md:w-2/3 lg:w-[600px] text-start md:text-end"
+              defaultValue="refianijulianti@gmail.com"
+            />
           </div>
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-2">
-            <span className="text-gray-600">Password</span>
-            <span className="bg-gray-100 px-4 py-2 rounded w-full md:w-2/3 lg:w-[600px] text-start md:text-end">************</span>
+            <label htmlFor="password" className="text-gray-600">Password</label>
+            <input 
+              type="password"
+              id="password"
+              className="bg-gray-100 px-4 py-2 rounded w-full md:w-2/3 lg:w-[600px] text-start md:text-end"
+              defaultValue="************"
+            />
           </div>
           <div className="flex justify-end">
             <button className="bg-teal-600 text-white px-6 py-2 rounded w-full md:w-auto">Edit</button>
